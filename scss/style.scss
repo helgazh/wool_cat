@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css?family=Niconne|Orbitron|Roboto');
+
+$font-niconne: 'Niconne', cursive;
+$font-orbitron: 'Orbitron', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+body{
+	background: #E5E5E5;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 100px;
+	padding-right: 100px;
+	max-width: 1400px;
+
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-header{
+	&--main{
+		background: url(../img/bg_main.png) 50% no-repeat;
+		background-size: cover;
+	}
+	&--catalog{
+		background: url(../img/catalog/catalog_bg.png) 50% no-repeat;
+		background-size: cover;
+		padding-bottom: 5px;
+		.ba-header-bar{
+			padding-top: 10px;
+			&__search{
+				margin-right: 180px;
+			}
+			.ba-logo{
+				margin-left: 15px;
+			}
+		}
+
+		h4{
+			width: 104px;
+			height: 24px;
+			left: 98px;
+			top: 266px;
+
+			font-family: Orbitron;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 24px;
+			text-align: right;
+
+			color: #FFFFFF;
+
+			margin-left: 100px;
+		}
+		label{
+			width: 74px;
+			height: 18px;
+
+			font-family: Orbitron;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 18px;
+			text-align: right;
+
+			color: #FFFFFF;
+		}
+
+	}
+	h1{
+		font-family: $font-niconne;
+		text-align: left;
+		
+		
+		font-style: normal;
+		font-weight: normal;
+		line-height: 70px;
+		font-size: 72px;
+
+		color: #F2F2F2;
+
+		/* Gray 6 */
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		margin-bottom: 160px;
+		margin-left: 350px;
+	}
+	.ba-postOffice{
+		margin-bottom: 40px;
+		margin-left: -90px;
+		svg{
+			width: 120px;
+			height: 100px;
+			padding-left: 10px;
+		}
+	}
+}
+.ba-header-bar{		
+	&--right{
+	}
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.ba-logo{
+		margin-top: -90px;
+		margin-left: -90px;
+	}
+	&__search{
+		margin-top: 25px;
+		.ba-backetcase{
+			margin-left: 65px;
+			padding: 0px;
+		}
+		.ba-search{
+			background: #C4C4C4;
+			border: 1px solid #000000;
+			border-radius: 20px;
+			font-family: Orbitron;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 16px;
+			padding: 7px 0px 7px 10px;
+			margin-right: -5px;
+
+			color: #626161;
+		}
+	}
+}
+
+nav{
+	display: flex;
+	margin-bottom: 50px;
+	a:hover{
+		color: white;
+	}
+	a + a{
+		margin-left: 40px;
+	}
+}
+.ba-menu{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	align-items: center;
+
+	a{
+		align-items: center;
+		justify-content: space-between;
+		height: 80px;
+		min-width: 50px;
+		padding: 16px 10px 20px;
+		text-decoration: none;
+		font-family: $font-orbitron;
+		color: #000;
+	}
+}
+
+// Catalog
+.ba-catalog{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 65px;
+	&__checkbox{
+		margin-left: 50px;
+		div{
+			margin-bottom: 38px;
+			label{
+				margin-left: 8px;
+			}
+
+//
+
+
+
+			input{
+				width: 35px;
+				height: 35px;
+				left: 98px;
+
+				background: #E5E5E5;
+				border: 1px solid #000000;
+				box-sizing: border-box;
+			}
+		}
+		h4{
+			margin-left: 0px;
+			margin-bottom: 40px;
+			margin-top: 25px;
+		}
+	}
+	div{
+		position: relative;
+		cursor: pointer;
+		h2{
+			position: absolute;
+			z-index: 1;
+			background: #FFFFFF;
+			opacity: 0.4;
+			width: 550px;
+			height: 71.01px;
+			top: 200px;
+			font-family: Niconne;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 48px;
+			text-align: center;
+		}
+	}
+}
+.ba-mainInfo{
+	width: 950px;
+	height: 429px;
+	margin-left: 160px;
+	margin-bottom: 178px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 24px;
+
+	color: #000000;
+	p + p{
+		padding-top: 30px;
+	}
+}
+
+// footer
+.ba-footer .ba-container{
+	display: flex;
+	justify-content: space-between;
+	background: #B2C1BB;
+	padding-top: 60px;
+	.ba-logo{
+		margin-top: -25px;
+		margin-left: -50px;
+	}
+	p{
+		margin-top: 5px;
+		margin-right: 30px;
+
+		width: 185px;
+		height: 18px;
+
+		font-family: Orbitron;
+		font-style: normal;
+		font-weight: normal;
+		line-height: normal;
+		font-size: 18px;
+		text-align: center;
+
+		color: #000000;
+		&:hover{
+			color: white;
+			cursor: pointer;
+			
+		}
+	}
+	.ba-social{
+		margin-left: 170px;
+		a{
+			text-decoration: none;
+			svg{
+				width: 50px;
+				height: 50px;
+				&:hover{
+					fill: white;
+				}
+			}
+		}
+	}
+
+	.ba-logo{
+		margin-bottom: 40px;
+	}
+}
+
+//Catalog
+
+.ba-position{
+	display: grid;
+	grid-template-columns: 450px 550px;
+	grid-gap: 10px;
+	border-bottom: 1px solid #D8D8D8;
+	&__info{
+		margin-left: -5px;
+	}
+	&__img{
+		margin-top: 60px;
+		
+		&:last-child{
+			padding-bottom: 80px;
+		}
+	}
+
+	h5{
+		margin-bottom: 20px;
+
+		font-family: Orbitron;
+		font-style: normal;
+		font-weight: normal;
+		line-height: normal;
+		font-size: 36px;
+		text-align: left;
+
+		color: #000000;
+	}
+	p{
+		font-family: Orbitron;
+		font-style: normal;
+		font-weight: normal;
+		line-height: normal;
+		font-size: 24px;
+		text-align: left;
+
+		color: #000000;
+	}
+	button{
+		text-transform: uppercase;
+
+		margin-top: 70px;
+		margin-bottom: 70px;
+
+		width: 245px;
+		height: 75px;
+		left: 600px;
+
+		background: #C4C4C4;
+
+		font-family: Orbitron;
+		font-style: normal;
+		font-weight: normal;
+		line-height: normal;
+		font-size: 36px;
+		text-align: center;
+
+		color: #000000;
+		&:hover{
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+
+	
+}
+
+
+
+//Form
+
+.form-popup{
+	max-width: 630px;
+	max-height: 1000px;
+
+	background-color: #E5E5E5;
+
+	position: absolute;
+	.form-container{
+		padding-left: 40px;
+		padding-top: 58px;
+		padding-right: 40px;
+		padding-bottom: 20px;
+		.postOffice{
+			display: flex;
+			input{
+				width: 30px;
+				margin-right: 30px;
+			}
+		}
+		button{
+			width: 245px;
+			height: 75px;
+
+			background: #C4C4C4;
+
+			font-family: Orbitron;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 36px;
+			text-align: center;
+
+			color: #000000;
+
+			text-transform: uppercase;
+
+			background: #C4C4C4;
+			&:hover{
+				font-weight: bold;
+				cursor: pointer;
+			}
+		}
+		h1{
+			width: 244px;
+			height: 28px;
+			left: 433px;
+			top: 282px;
+			
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 24px;
+			
+			color: #000000;
+		}
+		input{
+			width: 548px;
+			height: 30px;
+			left: 422px;
+			top: 392px;
+
+			background: #FFFFFF;
+
+			margin-bottom: 30px;
+
+		}
+		label{
+			width: 157.5px;
+			height: 24.44px;
+			left: 433px;
+			top: 693.11px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 18px;
+
+			margin-bottom: 5px;
+
+			color: #000000;
+			span{
+				width: 26.65px;
+				height: 32.22px;
+				left: 598.46px;
+				top: 911px;
+
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				line-height: normal;
+				font-size: 24px;
+
+				color: #ED1C24;
+
+				margin-left: 5px;
+			}
+		}
+	}
+}
