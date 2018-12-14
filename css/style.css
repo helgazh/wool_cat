@@ -200,7 +200,7 @@ nav a + a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 65px;
-  background-color: white;
+
 }
 
 .ba-catalog__checkbox {
@@ -330,6 +330,7 @@ nav a + a {
   grid-template-columns: 450px 550px;
   grid-gap: 10px;
   border-bottom: 1px solid #D8D8D8;
+  background-color: white;
 }
 
 .ba-position__info {
